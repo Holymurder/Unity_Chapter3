@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.44f1
+CRC: 1431755874
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 821ab4365e58a1a6b6756654e9261901
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 02891d9e88e5268131f274408ebabf71
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e3f9b0f4aeb60197238172a529e44b4f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/BundelAndAddressPrefabs/MyCube.prefab
+Dependencies: []
