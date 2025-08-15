@@ -5,10 +5,10 @@ public class BundlePrefabLoaderUI : MonoBehaviour
 {
     [Header("Bundle Settings")]
     [SerializeField]
-    private string _bundlePath = "Assets/AssetBundles/mybundle"; // шлях до бандлу
+    private string _bundlePath = "Assets/AssetBundles/mybundle";
 
     [SerializeField]
-    private string _prefabName = "MyCube"; // ім’я префаба як у Project
+    private string _prefabName = "MyCube";
 
     private GameObject _instance;
     private AssetBundle _bundle;
@@ -44,7 +44,6 @@ public class BundlePrefabLoaderUI : MonoBehaviour
 
     private IEnumerator LoadPrefabFromBundle()
     {
-        // 1) Завантаження бандлу
         var bundleLoadRequest = AssetBundle.LoadFromFileAsync(_bundlePath);
         yield return bundleLoadRequest;
 
@@ -55,14 +54,12 @@ public class BundlePrefabLoaderUI : MonoBehaviour
             yield break;
         }
 
-        // 2) Завантаження префаба з бандлу
         var assetLoadRequest = _bundle.LoadAssetAsync<GameObject>(_prefabName);
         yield return assetLoadRequest;
 
         var prefab = assetLoadRequest.asset as GameObject;
         if (prefab != null)
         {
-            // 3) Створення інстансу
             _instance = Instantiate(prefab, Vector3.zero, Quaternion.identity);
         }
         else
